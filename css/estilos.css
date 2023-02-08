@@ -94,6 +94,7 @@ td{
     margin:50px auto;
     font-family: 'Poppins';
     text-align:center;
+	overflow : scroll;	
     
 }
 
