@@ -24,6 +24,7 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link rel="shortcut icon" type="image/x-icon" sizes="128x128" href="img/favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
