@@ -109,7 +109,7 @@ $query=pg_query($sqlr);
                 <div id="input-ingresodos">
 
                 <form action="insertar_ma.php" method="POST">
-                        <input id="margin-top" type="date"class="form-control-mb3" name="fechai" placeholder="fecha" required>
+                        <input id="margin-top" type="date"class="form-control-mb3" min="<?php echo date('Y-m-d') ?>"  name="fechai" placeholder="fecha" required>
                         <input type="date"class="form-control-mb3" min="<?php echo date('Y-m-d') ?>" name="fechaf" placeholder="fecha" required>
                         <input type="text" class="form-control-mb3" name="placa" placeholder="placa" required>
                         <input type="text" class="form-control-mb3" name="cedula" placeholder="cedula" required>
