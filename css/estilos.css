@@ -87,6 +87,7 @@ td{
 
 .table-template{
     width:80%;
+overflow : scroll;
 }
 
 .table-template, th, td{
@@ -94,7 +95,7 @@ td{
     margin:50px auto;
     font-family: 'Poppins';
     text-align:center;
-	overflow : scroll;	
+		
     
 }
 
