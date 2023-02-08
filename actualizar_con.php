@@ -5,12 +5,17 @@
     $cedula = $_POST['ced'];
     $nomb = $_POST['nomb'];
     $ape = $_POST['ape'];
-    $edad = $_POST['edad'];
-
-    if($edad>=18)
+    
+    $query_fecha = pg_query($conect, "SELECT fecha_nacimiento FROM conductores WHERE cedula = $cedula");
+    $result_fecha = pg_fetch_assoc($query_fecha);
+    $fecha_nac = $result_fecha['fecha_nacimiento'];
+    
+    $sql_update = "UPDATE conductores SET nomb_c='$nomb',ape_c='$ape',fecha_nacimiento='$fecha_nac' WHERE cedula=$cedula";
+    $query_update = pg_query($conect, $sql_update);
+    
+    if($query_update)
     {
-        $sql_1 = "UPDATE conductores SET nomb_c='$nomb',ape_c='$ape',edad=$edad where cedula=$cedula";
-        $query_1=pg_query($sql_1);
+        
         include_once "conductores.php";
                                echo '<script> Swal.fire({
                                 icon: "success",

@@ -18,13 +18,15 @@ $query =pg_query($sqlb);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-
+    
 </head>
 
 <body>
 
    <header>
-
+   <nav class="profile-destroy">
+        <a href="salir.php"><i class="fa-solid fa-right-from-bracket"></i></a>
+   </nav>
    <nav class="navMenu">
       <a href="rutas.php">Rutas</a>
       <a href="conductores.php">Conductores</a>

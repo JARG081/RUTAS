@@ -11,6 +11,11 @@ $query=pg_query($sql);
 
     if($query){
         Header("Location: ag_parad.php?id={$cod_r}");
+        echo '<script> Swal.fire({
+            icon: "success",
+            title: "REALIZADO",
+            text: "REGISTRO ELIMINADO",
+          });</script>';
     }
     else
     {

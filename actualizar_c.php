@@ -79,7 +79,7 @@ $query =pg_query($sqlb);
                             <td><?php echo $row->cedula?></td>
                             <td><?php echo $row->nomb_c?></td>
                             <td><?php echo $row->ape_c?></td>
-                            <td><?php echo $row->edad?></td>
+                            <td><?php echo $row->edad_calculada?></td>
                             <td><a href="actualizar_c.php?id=<?php echo $row->cedula?>" class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a></td>
                             <td><a href="delete_c.php?id=<?php echo $row ->cedula?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a></td>
                         </tr> 
@@ -111,7 +111,6 @@ $query =pg_query($sqlb);
                 <input type="hidden" name="ced" value="<?php echo $consulta->cedula; ?>">
                 <input required type="text" name="nomb" placeholder="nombre" value="<?php echo $consulta->nomb_c; ?>">
                 <input required type="text" name="ape" placeholder="apellido"  value="<?php echo $consulta->ape_c; ?>">
-                <input required type="number" name="edad" placeholder="edad"  value="<?php echo $consulta->edad; ?>">
                 <button type="submit">Actualizar</button>
                 <button id="margin-left" href="conductores.php">Regresar</button>
                 </form>

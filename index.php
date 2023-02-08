@@ -8,12 +8,12 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link rel="shortcut icon" type="image/x-icon" sizes="128x128" href="img/favicon.png">
 	<title>LOGGIN</title>
 	<link rel="stylesheet" href="css/login.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>

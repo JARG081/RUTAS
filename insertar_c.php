@@ -4,7 +4,8 @@ include("conexion.php");
 $cedula=$_POST['cedula'];
 $nomb_c=$_POST['nomb_c'];
 $ape_c=$_POST['ape_c'];
-$edad=$_POST['edad'];
+$fecha_nacimiento=$_POST['fecha_nacimiento'];
+
 $query2=pg_query($conect,"SELECT COUNT(*) FROM conductores where cedula=$cedula");
 $query3 = pg_fetch_result($query2, 0, 0);
 
@@ -19,9 +20,10 @@ else
 {
     if($cedula>0)
     {
-        if($edad>=18)
+        if($fecha_nacimiento>=18)
         {
-            $sql="INSERT INTO conductores VALUES($edad,'$nomb_c','$ape_c',$cedula)";
+            $sql="INSERT INTO conductores (cedula, nomb_c, ape_c, fecha_nacimiento)
+            VALUES ('$cedula', '$nomb_c', '$ape_c', '$fecha_nacimiento')";
             $query= pg_query($conect,$sql);
             include_once "conductores.php";
                                    echo '<script> Swal.fire({

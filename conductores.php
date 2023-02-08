@@ -25,7 +25,9 @@ $query =pg_query($sqlb);
 <body>
 
    <header>
-
+   <nav class="profile-destroy">
+        <a href="salir.php"><i class="fa-solid fa-right-from-bracket"></i></a>
+   </nav>
 
    <nav class="navMenu">
       <a href="rutas.php">Rutas</a>
@@ -72,7 +74,7 @@ $query =pg_query($sqlb);
                             <td><?php echo $row->cedula?></td>
                             <td><?php echo $row->nomb_c?></td>
                             <td><?php echo $row->ape_c?></td>
-                            <td><?php echo $row->edad?></td>
+                            <td><?php echo $row->edad_calculada?></td>
                             <td><a href="actualizar_c.php?id=<?php echo $row->cedula?>" class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a></td>
                             <td><a href="delete_c.php?id=<?php echo $row ->cedula?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a></td>
                         </tr> 
@@ -104,7 +106,7 @@ $query =pg_query($sqlb);
                         <input type="number" class="form-control-mb3" name="cedula" placeholder="Cedula" required>
                         <input type="text" class="form-control-mb3" name="nomb_c" placeholder="Nombre" required>
                         <input type="text" class="form-control-mb3" name="ape_c" placeholder="Apellido" required>
-                        <input type="number" class="form-control-mb3" name="edad" placeholder="Edad" required>
+                        <input type="date" max="2005-02-08" class="form-control-mb3" name="fecha_nacimiento" placeholder="Edad" required>
                         <button type="submit">Agregar</button>
                     </form>
                             
