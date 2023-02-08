@@ -12,7 +12,7 @@ $query=pg_query($sql);
                                echo '<script> Swal.fire({
                                 icon: "success",
                                 title: "REALIZADO",
-                                text: "Registro satisfactoriamente",
+                                text: "Registro eliminado satisfactoriamente",
                               });</script>';
     }
     else
