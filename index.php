@@ -8,6 +8,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link rel="shortcut icon" type="image/x-icon" sizes="128x128" href="img/favicon.png">
 	<title>LOGGIN</title>
 	<link rel="stylesheet" href="css/login.css">
