@@ -28,8 +28,19 @@ $query_2 =pg_query($sql2);
 <div>
 
    <header>
-   
-   </header>
+    <nav class="profile-destroy">
+        <a href="salir.php"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </nav>
+        <nav class="navMenu">
+      <a href="rutas.php">Rutas</a>
+      <a href="conductores.php">Conductores</a>
+      <a href="buses.php">Buses</a>
+      <a href="paraderos.php">Paraderos</a>
+      <a href="#">Cubren</a>
+      <a href="contienen.php">Contienen</a>
+      <div class="dot"></div>
+        </nav>
+    </header>
 
    <main>
 
